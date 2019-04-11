@@ -1,0 +1,165 @@
+h3,
+h6 {
+    text-align: center;
+}
+
+/*Index CSS*/
+
+video {
+    height: 100%;
+    width: 100%;
+    display: none;
+    margin-right: 50%;
+}
+
+#indexsection {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    color: black;
+}
+
+#indexsection button {
+    margin-top: 10px;
+}
+
+/*About Us CSS*/
+
+#aboutuswrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 250px;
+}
+
+#about,
+#spon,
+#donate,
+#visit {
+    background-color: #baeab6;
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
+    padding: 10px 100px 10px 100px;
+}
+
+#inside {
+    margin: 20px 50px 20px 50px;
+}
+
+.img-responsive {
+    margin: 20px auto;
+}
+
+/*Login CSS*/
+
+#sp {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#loginform {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*Patient Page CSS*/
+
+#profilepic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+#patientpagesection {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    float: center;
+}
+
+/*Sign Up CSS*/
+
+#signupwrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-bottom: 250px;
+}
+
+#signupform select {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#signupform input {
+    margin-bottom: 10px;
+}
+
+#signupform h3,
+#signupform h6 {
+    text-align: center;
+}
+
+.wrapper {
+    width: 50%;
+    padding: 20px;
+}
+
+/*User Page CSS*/
+
+#userpagesection {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    align-content: center;
+}
+
+/*Nav CSS*/
+
+#navbar {
+    background-color: #57b750;
+}
+
+#navbar a {
+    color: white;
+}
+
+/*Footer CSS*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+footer table {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+}
+
+footer table tr td {
+    padding: 15px;
+    width: 20%;
+}
+
+footer table tr td img {
+    width: 25px;
+}
+
+footer table tr td form {
+    color: black;
+}
+
+footer table tr td a {
+    color: white;
+}

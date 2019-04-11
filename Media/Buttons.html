@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        /* style for Toggle Switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #43C36A;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #43C36A;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+
+        /* style for arrows*/
+        i {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button type="button" class="btn btn-success">Normal</button>
+    <button type="button" class="btn btn-success active">Active </button>
+    <button type="button" class="btn btn-success disabled">Disabled</button><br><br>
+
+    <button type="button" class="button1 btn btn-success">Normal</button>
+    <button type="button" class="button1 btn btn-success active">Active </button>
+    <button type="button" class="button1 btn btn-success disabled">Disabled</button>
+
+    <br><br>
+
+    <div class="container">
+        <button type="button" class="btn btn-success btn-block">Button</button>
+    </div>
+
+    <br><br>
+
+    <div style="width:250px" class="container">
+        <button type="button" class="btn btn-success btn-block">Button</button>
+    </div>
+
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+    </label><br><br>
+
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+    </label>
+
+    <p>Right arrow: <i class="arrow right"></i></p>
+    <p>Left arrow: <i class="arrow left"></i></p>
+
+    <div class="container">
+        <h2>Nesting Button Groups</h2>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-success">---</button>
+            <button type="button" class="btn btn-success">---</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                    --- <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">...</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body></html>
